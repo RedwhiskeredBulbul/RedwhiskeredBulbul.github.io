@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>我的观鸟记录</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🐦 我的观鸟记录</h1>
+
+  <form id="recordForm">
+    <label>日期：<input type="date" id="date" required /></label><br><br>
+    <label>地点：<input type="text" id="location" placeholder="例如：北京奥林匹克森林公园" required /></label><br><br>
+    <label>鸟种：<input type="text" id="species" placeholder="例如：喜鹊" required /></label><br><br>
+    <label>备注：<textarea id="notes" placeholder="观察到的行为、数量等..."></textarea></label><br><br>
+    <button type="submit">添加记录</button>
+  </form>
+
+  <h2>已有记录</h2>
+  <div id="recordsList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
